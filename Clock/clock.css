@@ -1,0 +1,85 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF4EC;
+}
+
+
+h1{
+    font-size: 35pt;
+
+    text-align: center;
+    margin-top: 100px;
+
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.123);
+}
+
+div{
+
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    background-color: #FFF4EC;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.123);
+
+    position: relative;
+}
+
+/*#region FadeImg*/
+    img:hover{
+
+        transition: opacity 1s;
+        opacity: 0.4;
+
+    }
+    img:not(:hover){
+
+        transition: opacity 1s;
+        opacity: 1;
+
+    }
+/*#endregion FadeImg*/
+
+/*#region FadeDay*/
+    img:hover #day{
+
+        
+        transition: opacity 4s;
+        opacity: 0;
+        
+    }
+    img:not(:hover) #day{
+        
+        transition: opacity 0.2s;
+        opacity: 1;
+
+    }
+/*#endregion FadeDay*/
+
+p{
+
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    font-size: 30px;
+}
+
+img.Images{
+
+    display: block;
+    width: 325px;
+
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer{
+
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11pt;
+}
